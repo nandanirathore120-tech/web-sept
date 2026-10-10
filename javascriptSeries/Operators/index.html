@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Operators : Action on data
+
+        //1. Arithmetic op: - , +, /, *, %(modulus - Remainder)
+        let x= 10
+        let y= 3
+
+        console.log(x+y)
+        console.log(x-y)
+        console.log(x*y)
+        console.log(x/y)
+
+        console.log(x%y) //10 % 3 ---1
+
+        console.log(10 % 2) // 0
+
+        //left < right -- left
+        console.log(1 % 9)  //1
+        console.log(2 % 10) //2
+
+
+        //2. Assignment operator = value that is been assigned
+
+        let score = 3
+
+        score += 2
+
+        console.log(score)
+
+        //3. Comparsion - > , < , >=, <=, ==, ===, != :Boolean
+
+        console.log(10>4)
+        console.log(10<5)
+
+
+        console.log(20 >= 20) // true
+        console.log(5 <= 5)  // true
+
+
+        let price1 = 100
+        let price2 = "100"
+
+        // == : Checks the value 
+
+        console.log(price1 == price2)  //true
+
+
+        // === : Checks the value and data type
+            // num === string
+        console.log(price1 === price2)  //false
+
+        console.log(10 != 5)  //true
+        console.log(20 != 20)  //false
+
+
+        //4. logical operator : AND , OR , NOT 
+
+        //AND - && : Both condition true output is true
+
+        let loginStatus = false
+
+        let isMember = true
+
+        let TotalBill = 700
+
+        console.log("Elegible For Discount", isMember && TotalBill >= 1000)
+                                           // left && right
+                                           //true && true
+                                           //output true
+        // OR - || : Atleast one condition is true 
+
+
+        let LoginStatus = true
+
+        let NetflixSub = false
+
+        console.log("Can i use app", LoginStatus || NetflixSub)
+                                     //true || false
+
+        //! - opposite Value
+
+        let FollowStatus = false
+
+        console.log(!FollowStatus)
+        
+
+        let Subscription = false
+
+        console.log(!Subscription)
+
+    </script>
+</body>
+</html>
